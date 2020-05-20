@@ -36,10 +36,12 @@ class Todo extends React.Component {
         return (
             <React.Fragment>
                 <ul style={centerStyle} className="list-group">
-                    <div style={bgColor} className="mt-2">
+                    <div style={bgColor} className="input-group mt-2">
                         <img style={todoImg} src="https://picsum.photos/id/20/200/150" alt="Todo" loading="lazy"></img>
                         <input type="text" name="todo" style={inputStyle} placeholder="Add todo" />
-                        <button><i className="fas fa-paper-plane fa-2x"></i></button>
+                        <span class="input-group-btn">
+                        <button className="btn btn-secondary"><i className="fas fa-paper-plane fa-2x"></i></button>
+                        </span>
                     </div>
                 {/* <li style={bgColor} className="list-group-item"></li> */}
                     <li className="list-group-item"><input type="checkbox"/> Todo 1</li>
