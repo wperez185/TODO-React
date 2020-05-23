@@ -6,18 +6,10 @@ class Todo extends React.Component {
         const bgColor = {
             backgroundColor: '#219dcf'
         }
-        // const btnStyles = {
-        //     backgroundColor: '#4CAF50',
-        //     border: 'none',
-        //     color: '#fff',
-        //     padding: '15px 32px',
-        //     textAlign: 'center',
-        //     textDecoration: 'none',
-        //     display: 'inline-block',
-        //     fontSize: '16px',
-        //     // margin: '4px 2px',
-        //     cursor: 'pointer'
-        // }
+        const todoStyles = {
+            border: '10px double rgba(0,0,0,.125)',
+            fontSize: '16px',
+        }
         const centerStyle = {
              width: '30%',
              margin: '0 auto'
@@ -44,11 +36,11 @@ class Todo extends React.Component {
                         </span>
                     </div>
                 {/* <li style={bgColor} className="list-group-item"></li> */}
-                    <li className="list-group-item"><input type="checkbox"/> Todo 1</li>
-                    <li className="list-group-item"><input type="checkbox"/> Todo 2</li>
-                    <li className="list-group-item"><input type="checkbox"/> Todo 3</li>
-                    <li className="list-group-item"><input type="checkbox"/> Todo 4</li>
-                    <li className="list-group-item"><input type="checkbox"/> Todo 5</li>
+                    <li style={todoStyles} className="list-group-item"><input type="checkbox"/> Todo 1 <span className="ml-3"></span><i className="fas fa-trash-alt"></i></li>
+                    <li style={todoStyles} className="list-group-item"><input type="checkbox"/> Todo 2</li>
+                    <li style={todoStyles} className="list-group-item"><input type="checkbox"/> Todo 3</li>
+                    <li style={todoStyles} className="list-group-item"><input type="checkbox"/> Todo 4</li>
+                    <li style={todoStyles} className="list-group-item"><input type="checkbox"/> Todo 5</li>
                  </ul>
             </React.Fragment>
 
