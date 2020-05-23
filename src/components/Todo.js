@@ -1,7 +1,7 @@
 import React from 'react'
 
 class Todo extends React.Component {
-
+// make stlye checkbox
     render() {
         const bgColor = {
             backgroundColor: '#219dcf'
@@ -36,7 +36,7 @@ class Todo extends React.Component {
                         </span>
                     </div>
                 {/* <li style={bgColor} className="list-group-item"></li> */}
-                    <li style={todoStyles} className="list-group-item"><input type="checkbox"/> Todo 1 <span className="ml-3"></span><i className="fas fa-trash-alt"></i></li>
+                    <li style={todoStyles} className="list-group-item"><input type="checkbox"/> Todo 1 <button className="ml-3 bg-danger border-0"><i className="fas fa-trash-alt text-white"></i></button></li>
                     <li style={todoStyles} className="list-group-item"><input type="checkbox"/> Todo 2</li>
                     <li style={todoStyles} className="list-group-item"><input type="checkbox"/> Todo 3</li>
                     <li style={todoStyles} className="list-group-item"><input type="checkbox"/> Todo 4</li>
