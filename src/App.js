@@ -3,10 +3,9 @@ import React from 'react';
 import Nav from './components/Nav'
 import Todo from './components/Todo'
 
-class App extends React.Component {
+function App () {
   
   
-  render() {
 
       return (
         <div className="App container-fluid">
@@ -14,7 +13,6 @@ class App extends React.Component {
           <Todo />
         </div>
       );
-  }
 
 }
 
